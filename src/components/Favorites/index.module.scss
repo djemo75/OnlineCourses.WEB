@@ -1,0 +1,21 @@
+.tabs {
+  background: #ebebeb;
+  padding: 1rem;
+  margin-bottom: 0rem;
+
+  .tabsLabelsWrapper {
+    margin-bottom: 0rem !important;
+  }
+
+  button {
+    font-size: 1rem;
+    background: #fff;
+    font-weight: bold;
+    text-transform: none;
+    margin-right: 1rem;
+  }
+
+  & > div > div > div > span {
+    display: block !important;
+  }
+}

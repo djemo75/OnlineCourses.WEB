@@ -1,0 +1,72 @@
+.root {
+  border: 1px solid #f7f5ff;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+
+  .cardTitle {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .randomRating {
+    margin-top: 0.5rem;
+  }
+
+  .averageRating {
+    display: flex;
+    align-items: center;
+    & > .value {
+      display: block;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-right: 15px;
+      margin-top: -3px;
+    }
+
+    & > .text {
+      font-weight: 500;
+    }
+  }
+
+  .centeredColumn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.ratingStatisticRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .icon {
+    svg {
+      color: #faaf00;
+    }
+  }
+
+  .number {
+    font-weight: bold;
+    margin-top: -5px;
+    margin-left: 5px;
+  }
+
+  .progressBar {
+    width: 100%;
+    margin-left: 15px;
+    & > span {
+      height: 10px;
+      border-radius: 4px;
+    }
+  }
+
+  .percentage {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    width: 80px;
+  }
+}

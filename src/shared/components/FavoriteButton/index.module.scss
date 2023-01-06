@@ -1,0 +1,29 @@
+.favoriteButton {
+  background: white;
+  color: #6c5dd4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  cursor: pointer;
+
+  &.active {
+    background: #6c5dd4;
+    color: white;
+  }
+
+  &:hover {
+    background: #6c5dd4;
+    color: white;
+  }
+
+  &.active:hover {
+    background: white;
+    color: #6c5dd4;
+  }
+
+  &.disabled {
+    background: white;
+    color: #6c5dd4;
+  }
+}

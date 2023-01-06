@@ -1,0 +1,92 @@
+.imageContainer {
+  width: 100%;
+  height: 100%;
+
+  span {
+    width: 100% !important;
+    height: 500px !important;
+
+    @include mediaMobile {
+      width: 100%;
+      height: 100% !important;
+      min-height: 300px;
+      max-height: 500px;
+    }
+  }
+
+  .image {
+    border-radius: 0.75rem;
+  }
+}
+
+.title {
+  font-weight: bold;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+
+    .ratingValue {
+      margin-left: 0.75rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+
+  .reviews {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      color: #6c5dd4;
+    }
+
+    .reviewsValue {
+      margin-left: 0.75rem;
+      font-weight: bold;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.description {
+  margin-top: 1rem;
+}
+
+.tags {
+  text-transform: uppercase;
+  color: #6c5dd4;
+  font-size: 0.875rem;
+
+  .tag {
+    margin-right: 0.5rem;
+    background: #ebe7ff;
+    color: #6c5dd4;
+    font-weight: bold;
+  }
+}
+
+.actionArea {
+  border-top: 1px solid #ededed;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .socialMedias {
+    display: flex;
+
+    & > div {
+      margin-right: 0.75rem;
+    }
+  }
+}

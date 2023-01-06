@@ -1,0 +1,14 @@
+.tabLabels {
+  button {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: none;
+  }
+  button[tabindex="0"] {
+    color: #000;
+  }
+
+  & > div > span {
+    display: none !important;
+  }
+}

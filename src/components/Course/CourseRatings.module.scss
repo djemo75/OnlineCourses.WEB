@@ -1,0 +1,59 @@
+.root {
+  border: 1px solid #f7f5ff;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  margin-top: 2rem;
+
+  .cardHeader {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    .info {
+      margin-left: 1rem;
+
+      .userName {
+        font-weight: bold;
+        font-size: 1.125rem;
+      }
+
+      .date {
+        color: #838493;
+      }
+
+      .deleteButton {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .cardContent {
+    margin-top: 1.5rem;
+  }
+
+  .averageRating {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    & > .value {
+      display: block;
+      font-size: 8rem;
+      color: #fff3d8;
+    }
+  }
+
+  .centeredColumn {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}

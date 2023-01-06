@@ -1,0 +1,11 @@
+.appLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+
+  .logoIcon {
+    margin-top: -0.5rem;
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,86 @@
+.title {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.closeIcon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.dialogContent {
+  padding-bottom: 2.5rem;
+}
+
+.subline {
+  text-align: center;
+}
+
+.providersLabel {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.providersWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include mediaMobile {
+    flex-direction: column;
+  }
+
+  .providerButton {
+    border: 1px solid #858585;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    aspect-ratio: 1 / 1;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      border: 1px solid #6c5dd4;
+      background: #faf9ff;
+      color: #6c5dd4;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    &.providerButtonDisabled {
+      border: 1px solid #efeae5;
+      cursor: not-allowed;
+      color: #808080;
+      box-shadow: none;
+      background: none;
+    }
+
+    .providerIcon {
+      margin-bottom: 1rem;
+
+      svg {
+        height: 2rem;
+      }
+    }
+
+    @include mediaMobile {
+      width: 100%;
+      margin-bottom: 1rem;
+      flex-direction: row;
+      aspect-ratio: 0;
+      align-items: center;
+
+      .providerIcon {
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+
+      .providerName {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

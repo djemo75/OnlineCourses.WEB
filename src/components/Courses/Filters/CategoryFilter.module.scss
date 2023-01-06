@@ -1,0 +1,21 @@
+.item {
+  background: #f4f4f4;
+  color: #6b6b6b;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 0.5rem 0.75rem;
+
+  &:hover {
+    background: #d9d9d9;
+  }
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.activeItem {
+  background: #f1eeff !important;
+  color: #6c5dd4;
+}

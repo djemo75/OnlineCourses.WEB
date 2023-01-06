@@ -1,0 +1,31 @@
+.accordion {
+  margin: 0px;
+  box-shadow: none;
+  border: 1px solid #efefef;
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+
+  &:before {
+    display: none;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .accordionSummary {
+    border: none;
+    margin: 0.25rem 0 !important;
+  }
+
+  .accordionDetails {
+    border-top: 1px solid #efefef;
+    padding-top: 0.75rem;
+    overflow-x: auto;
+  }
+}
+
+.expandIcon {
+  color: #6c5dd4;
+}

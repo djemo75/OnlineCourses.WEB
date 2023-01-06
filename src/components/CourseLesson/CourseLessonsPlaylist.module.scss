@@ -1,0 +1,68 @@
+.root {
+  padding-left: 1rem;
+
+  @include mediaMobileAndTablet() {
+    padding-left: 0rem;
+  }
+}
+
+.topActionBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .theaterModeButton {
+    border: 1px solid #6c5dd4;
+
+    & svg {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.playlist {
+  margin-top: 1.5rem;
+
+  .playlistItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: #fefefe;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.25s;
+
+    &:hover {
+      background: #ece9fe;
+    }
+
+    &.activePlaylistItem {
+      .playlistItemTitle {
+        color: #6c5dd4;
+      }
+
+      & svg {
+        color: #6c5dd4;
+      }
+    }
+
+    & svg {
+      color: gray;
+    }
+
+    .playlistItemTitle {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .playlistItemDuration {
+      color: gray;
+      margin-right: 0.25rem;
+    }
+  }
+}
