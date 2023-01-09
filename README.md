@@ -2,7 +2,15 @@
 
 Platform for online courses with the following features:
 
-- will be added soon
+- sign in with Google
+- managing categories(Contentful panel)
+- managing courses(Contentful panel)
+- managing lessons by courses(Contentful panel)
+- filtering courses by category and level, pagination
+- list of favorite courses
+- list of favorite lessons
+- reviewing courses by customers
+- social sharing
 
 ## Technologies used
 
@@ -22,7 +30,7 @@ NEXT_PUBLIC_OAUTH_CLIENT_ID=
 
 Then type the following command in the terminal:
 ```
-npm i && npm start
+npm i && npm run dev
 ```
 
 ## Linked repositories
