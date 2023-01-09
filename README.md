@@ -1,14 +1,14 @@
-# Project information:
+## Project information:
 
 Platform for online courses with the following features:
 
 - will be added soon
 
-# Technologies used
+## Technologies used
 
 HTML, CSS, JavaScript, React, Next Js, Context API
 
-# Setup and Launch
+## Setup and Launch
 
 To run the application, you need to create an .env file in the project folder with the following content and fill in the empty variables:
 ```
@@ -24,3 +24,7 @@ Then type the following command in the terminal:
 ```
 npm i && npm start
 ```
+
+## Linked repositories
+
+- OnlineCourses.API - https://github.com/djemo75/OnlineCourses.API
